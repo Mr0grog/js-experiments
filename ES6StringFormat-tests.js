@@ -6,14 +6,18 @@
  */
 
 // Util
+this.assertLogger = this.assertLogger || function (pass, message) {
+	console[pass ? "log" : "error"](message);
+};
+
 var assertEquals = function (value, expected, message) {
 	if (expected === value) {
-		console.log("PASS: " + (message || expected));
+		assertLogger(true, "PASS: " + (message || expected));
 	}
 	else {
-		console.error("FAIL: " + (message || "") + 
-		              "\nExpected: " + expected + 
-		              "\nResult:   " + value);
+		assertLogger(false, "FAIL: " + (message || "") + 
+		             "\nExpected: " + expected + 
+		             "\nResult:   " + value);
 	}
 };
 
