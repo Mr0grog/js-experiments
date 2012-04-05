@@ -3,6 +3,7 @@
  * http://wiki.ecmascript.org/doku.php?id=strawman:string_format_take_two
  * 
  * (c) 2012 Rob Brackett (rob@robbrackett.com)
+ * This code is free to use under the terms of the accompanying LICENSE.txt file
  */
 
 // Util

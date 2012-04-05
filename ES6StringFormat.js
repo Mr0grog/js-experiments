@@ -10,6 +10,7 @@
  *   - Capitalization is incorrect with f/F
  * 
  * (c) 2012 Rob Brackett (rob@robbrackett.com)
+ * This code is free to use under the terms of the accompanying LICENSE.txt file
  */
 
 String.prototype.format = function (data) {
